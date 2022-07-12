@@ -3,15 +3,21 @@
     ViewData["Title"] = "Summary";
 }
 
-<div>
-    <p><h1> Registration was Successful </h1><br /><br />
+<div >
+    <h1> Registration was Successful </h1><br /><br />
+    <p style="margin-left: 5em">
    
         <h3>Verify Your Data Below: </h3><br />
         <b>Name:</b> @ViewData["firstName"] @ViewData["lastName"] <br /><br />
         <b>Email:</b> @ViewData["email"]<br /><br />
-        <b>Password:</b> @ViewData["password"]
-
+        <b>Password:</b> @ViewData["password"]<br/><br/>
+        <b>Coffee Preferenc:</b> @ViewData["coffee"]<br /><br />
+        <b>Age Range:</b> @ViewData["ageRange"]<br /><br />
     </p>
+    <h2>Welcome to the Coffee Shop!!!</h2><br /><br />
+
+    <img src="/lib/images/coffee.png" alt="Coffee" style="width:600px; height:300px";/> <br /><br />
+    
 </div>
 
 
