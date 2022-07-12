@@ -21,6 +21,15 @@ namespace CoffeeShopReg.Controllers
         {
             return View();
         }
+        public IActionResult Summary( string firstName, string lastName, string email, string password )
+        {
+            ViewData["firstName"] = firstName;
+            ViewData["lastName"] = lastName;
+            ViewData["email"] = email;
+            ViewData["password"] = password;
+
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
