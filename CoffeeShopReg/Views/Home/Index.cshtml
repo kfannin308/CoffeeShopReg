@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    
 }
 
 <div class="text-center">
@@ -10,3 +11,13 @@
     <!--h3><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Registration">Click Here to Register</a></!--h3-->
     <a href="Home/Registration">Click Here to Register</a>
 </div>
+
+@{
+	foreach (var currProduct in Program.productList)
+	{
+
+	<a href="Home/Products?id=@currProduct.Id">@(currProduct.Name + " " + currProduct.Description)</a> 
+
+		<br/>
+	}
+}
