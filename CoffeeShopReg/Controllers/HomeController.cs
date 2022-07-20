@@ -2,6 +2,7 @@
 using CoffeeShopReg.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Linq;
 
 namespace CoffeeShop.Controllers
 {
